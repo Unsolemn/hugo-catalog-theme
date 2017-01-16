@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+	<main>
+          {{ $brands := .Site.Taxonomies.brands }}
+            {{ if $brands }}
+              <h1>Motorcycle manufacturers:</h1>
+              {{ range $index, $brand := .Site.Taxonomies.brands }}
+              <a href="{{ "/brands/" | relURL }}{{ $index | urlize }}">{{ $index }}</a>
+              <br>
+            {{ end }}
+          {{ end }}
+	</main>
+{{ partial "footer.html" . }}
