@@ -2,9 +2,8 @@
 <h1>{{.Title}}</h1>
 	<main>
           {{range $index, $page := .Data.Pages}}
-          <a href="{{.RelPermalink}}">
-            {{ index (index .Params.spec 0) "Model" }}
-          </a><br>
+          <a href="{{.RelPermalink}}">{{ index (index .Params.spec 0) "Model" }}</a>, year {{.Params.Years }}
+          <br>
           {{end}}
 	</main>
 {{ partial "footer.html" . }}
