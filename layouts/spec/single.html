@@ -7,10 +7,12 @@
 			<div>
 				{{ .Content }}
 			</div>
-                        <div>
+                        <div id="spec-list">
                           {{ range $index, $element := .Params.spec}}
                             {{ range $key, $value := $element }}
-                              {{ $key }} : {{ $value }} <br>
+                            <div class="row small-up-1 medium-up-2 large-up-2">
+                              <div class="column"> {{ $key }}: </div><div class="column"> {{ $value }} </div>
+                            </div>
                             {{ end }}
                           {{ end }}
                         </div>
