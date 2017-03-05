@@ -1,15 +1,18 @@
 {{ partial "header.html" . }}
 	<main>
 		<article>
+                  <h3>Back to <a href="/brands/{{ .Params.Brands }}">{{ .Params.Brands }}</a></h3>
 			<h1>{{ .Title }}</h1>
 			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
 			<div>
 				{{ .Content }}
 			</div>
-                        <div>
+                        <div id="spec-list">
                           {{ range $index, $element := .Params.spec}}
                             {{ range $key, $value := $element }}
-                              {{ $key }} : {{ $value }} <br>
+                            <div class="row small-up-1 medium-up-2 large-up-2">
+                              <div class="column"> {{ $key }}: </div><div class="column"> {{ $value }} </div>
+                            </div>
                             {{ end }}
                           {{ end }}
                         </div>
