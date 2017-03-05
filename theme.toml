@@ -1,13 +1,4 @@
 languageCode = "en-us"
-title = "Moto.fans"
-baseurl = "http://moto.fans/"
-theme = "motofans"
 disableSitemap = "true"
 disableRSS = "true"
 disableHugoGeneratorInject = "true"
-metaDataFormat = "json"
-[taxonomies]
-brand = "brands"
-year = "years"
-category = "categories"
-
