@@ -22,16 +22,16 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+
+  /**
+   * Add the correct display in IE 10-.
+   */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%; }
 
 /* Sections
        ========================================================================== */
-/**
-     * Remove the margin in all browsers (opinionated).
-     */
-body {
-  margin: 0; }
-
 /**
      * 1. Correct the inability to style clickable types in iOS and Safari.
      * 2. Change font properties to `inherit` in Safari.
@@ -41,17 +41,6 @@ body {
   /* 1 */
   font: inherit;
   /* 2 */ }
-
-/* Hidden
-       ========================================================================== */
-/**
-     * Add the correct display in IE 10-.
-     */
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 100%; }
 
 *,
 *::before,
