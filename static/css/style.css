@@ -148,7 +148,7 @@ textarea::placeholder {
   .is-invalid-input:not(:focus)::placeholder {
     color: #cc4b37; }
 
-/*model spec page */
-#spec-list div.row:nth-child(odd) {
-      background-color: #cccccc;
-    }
+/*item spec page */
+.row.spec {
+  border-bottom: 1px dashed grey;
+}
