@@ -2,7 +2,7 @@
 <h1>{{.Title}}</h1>
 	<main>
           {{range $index, $page := .Data.Pages}}
-          <a href="{{.RelPermalink}}">{{ index (index .Params.spec 0) "Model" }}</a>, year {{.Params.Years }}
+          <a href="{{.RelPermalink}}">{{ with .Params.videos.trailers }} {{ with index . 0}} {{ .url }} {{ end }} {{ end }}</a>, year {{.Params.Year }}
           <br>
           {{end}}
 	</main>
