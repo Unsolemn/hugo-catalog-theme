@@ -3,8 +3,8 @@
           {{ $name := .Site.Taxonomies.name }}
             {{ if $name }}
               <h1>Movies:</h1>
-              {{ range $index, $name := .Site.Taxonomies.name }}
-              <a class="brand-name" href="{{ "/name/" | relURL }}{{ $index | urlize }}">{{ $index }}</a>
+              {{ range $index, $alternativeName := .Site.Taxonomies.alternativeName }}
+              <a class="brand-name" href="{{ "/alternativename/" | relURL }}{{ $index | urlize }}">{{ $index }}</a>
               <br>
             {{ end }}
           {{ end }}
