@@ -1,9 +1,10 @@
 {{ partial "header.html" . }}
-<h1>{{.Title}}</h1>
 	<main>
-          {{range $index, $page := .Data.Pages}}
-          <a href="{{.RelPermalink}}">{{ with .Params.videos.trailers }} {{ with index . 0}} {{ .url }} {{ end }} {{ end }}</a>, year {{.Params.Year }}
-          <br>
-          {{end}}
+			{{range $index, $page := .Data.Pages}}
+			<h1>{{.Params.name}}</h1>
+			<h4>{{.Params.Year }}</h4>
+			<div id="yohoho"  data-title="{{ .Params.name }} / {{ .Params.alternativeName }} ({{ .Params.year }})"></div>
+			<script src="//yohoho.cc/yo.js"></script>
+			{{end}}
 	</main>
 {{ partial "footer.html" . }}

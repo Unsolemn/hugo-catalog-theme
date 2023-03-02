@@ -4,7 +4,7 @@
             {{ if $name }}
               <h1>Movies:</h1>
               {{ range $index, $alternativeName := .Site.Taxonomies.alternativeName }}
-              <a class="brand-name" href="{{ "/alternativename/" | relURL }}{{ $index | urlize }}">{{ $index }}</a>
+              <a class="brand-name" href="{{ "/alternativename/" | relURL }}{{ $index | urlize }}/index.html">{{ $index }}</a>
               <br>
             {{ end }}
           {{ end }}
