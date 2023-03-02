@@ -3,8 +3,10 @@
           {{ $name := .Site.Taxonomies.name }}
             {{ if $name }}
               <h1>Movies:</h1>
+			  {{ $counter := 1 }}
               {{ range $index, $alternativeName := .Site.Taxonomies.alternativeName }}
-              <a class="brand-name" href="{{ "/alternativename/" | relURL }}{{ $index | urlize }}/index.html">{{ $index }}</a>
+              {{ $counter }}. <a class="brand-name" href="{{ "/alternativename/" | relURL }}{{ $index | urlize }}/index.html">{{ $index }}</a>
+			  {{ $counter = add $counter 1 }}
               <br>
             {{ end }}
           {{ end }}
