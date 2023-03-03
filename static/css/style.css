@@ -5,6 +5,7 @@ body {
 main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+	color: whitesmoke;
 }
 
 main a.brand-name {
@@ -84,7 +85,7 @@ a:hover.home-link {
 	overflow: hidden;
 }
 
-h1 { 
+h1#movie-title { 
   font-size: 6em;
   text-align: center;
   font-family: arial;
