@@ -1,10 +1,17 @@
 {{ partial "header.html" . }}
+
 	<main>
 			{{range $index, $page := .Data.Pages}}
 			<h1>{{.Params.name}}</h1>
 			<h4>{{.Params.Year }}</h4>
-			<div id="yohoho"  data-title="{{ .Params.name }} / {{ .Params.alternativeName }} ({{ .Params.year }})"></div>
-			<script src="//yohoho.cc/yo.js"></script>
+			<div id="container">
+			  <div id="monitor">
+				<div id="monitorscreen">
+					<div id="yohoho"  data-title="{{ .Params.name }} / {{ .Params.alternativeName }} ({{ .Params.year }})"></div>
+					<script src="//yohoho.cc/yo.js"></script>
+				</div>
+			  </div>
+			</div>
 			{{end}}
 	</main>
 {{ partial "footer.html" . }}
