@@ -86,12 +86,10 @@ a:hover.home-link {
 }
 
 h1#movie-title { 
-  font-size: 6em;
   text-align: center;
   font-family: arial;
   font-smoothing: antialiased;
   font-weight: bold;
-  color: #0066a1;
   mix-blend-mode: difference;
   xmix-blend-mode: multiply;
   xmix-blend-mode: overlay;
@@ -100,15 +98,14 @@ h1#movie-title {
   xmix-blend-mode: hard-light;
   xmix-blend-mode: color-burn;
   xmix-blend-mode: lighten;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0a0a, 0 0 70px #ff0a0a, 0 0 80px #ff0a0a, 0 0 100px #ff0a0a, 0 0 150px #ff0a0a;
 }
 
 @media all and (min-width: 960px) {
 	#monitor {
-		-webkit-animation: tvflicker .2s infinite alternate; 
-		-moz-animation:    tvflicker .5s infinite alternate; 
-		-o-animation:      tvflicker .5s infinite alternate; 
-		animation:         tvflicker .5s infinite alternate; 
+		-webkit-animation: tvflicker .8s infinite alternate;
+		-moz-animation:    tvflicker 2s infinite alternate;
+		-o-animation:      tvflicker 2s infinite alternate;
+		animation:         tvflicker 2s infinite alternate;
 	}
 
 	@-webkit-keyframes tvflicker {
