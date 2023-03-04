@@ -58,6 +58,7 @@ a:hover.home-link {
 	border-radius: 10px; 
 	border-bottom-left-radius: 50% 2%; 
 	border-bottom-right-radius: 50% 2%;
+	box-shadow: 0 0 95px 0 rgba(200,230,255,0.45);
 }
 
 #monitor:after {
